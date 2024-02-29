@@ -1,0 +1,32 @@
+replicaCount: 1
+
+containers:
+  image: sebaspp/studentapi:2.1.19
+
+env:
+  - name: DB_HOST
+    value: mysql
+  - name: DB_NAME
+    value: student
+  - name: DB_PASSWORD
+    value: root
+  - name: DB_USERNAME
+    value: root
+
+httpGet:
+  path: /student/health
+
+resources:
+  requests:
+    cpu: "400m"
+    memory: "400Mi"
+  limits:
+    cpu: "800m"
+    memory: "800Mi"
+  
+autoscaling:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 3
+
+
