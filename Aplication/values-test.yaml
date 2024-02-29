@@ -1,8 +1,5 @@
 replicaCount: 1
 
-containers:
-  image: sebaspp/studentapi:2.1.19
-
 env:
   - name: DB_HOST
     value: mysql
