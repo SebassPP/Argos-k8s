@@ -1,14 +1,9 @@
 replicaCount: 1
 
-env:
-  - name: DB_HOST
-    value: mysql
-  - name: DB_NAME
-    value: student
-  - name: DB_PASSWORD
-    value: root
-  - name: DB_USERNAME
-    value: root
+bdhost: mysql
+dbname: student
+dbpassword: root
+dbusername: root
 
 httpGet:
   path: /student/health

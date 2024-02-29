@@ -22,13 +22,13 @@ spec:
         - containerPort: 8080
         env: 
         - name: DB_HOST
-          value: {{.Values.env.DB_HOST }}
+          value: {{.Values.bdhost }}
         - name: DB_NAME
-          value: {{.Values.env.DB_NAME }}
+          value: {{.Values.dbname }}
         - name: DB_PASSWORD
-          value: {{.Values.env.DB_PASSWORD }}
+          value: {{.Values.dbpassword }}
         - name: DB_USERNAME
-          value: {{.Values.env.DB_USERNAME }}
+          value: {{.Values.dbusername }}
         startupProbe:
           httpGet:
             path: {{.Values.httpGet.path }}
