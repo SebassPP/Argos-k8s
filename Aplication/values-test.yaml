@@ -11,10 +11,9 @@ requestsmemory: "100Mi"
 limitscpu: "200m"
 limitsmemory: "200Mi"
 
-  
-autoscaling:
-  enabled: false
-  minReplicas: 1
-  maxReplicas: 3
+
+autoscalingmin: 1
+autoscalingmax: 3
+
 
 
