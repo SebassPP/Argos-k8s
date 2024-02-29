@@ -31,13 +31,13 @@ spec:
           value: {{.Values.dbusername }}
         startupProbe:
           httpGet:
-            path: {{.Values.healthpath}}
+            path: /student/health
             port: 8080
           failureThreshold: 30
           periodSeconds: 50
         livenessProbe:
           httpGet:
-            path: {{.Values.httpGet.path }}
+            path: /student/health
             port: 8080
           initialDelaySeconds: 3
           timeoutSeconds: 3
