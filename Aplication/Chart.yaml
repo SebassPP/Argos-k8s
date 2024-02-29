@@ -1,6 +1,6 @@
 apiVersion: v2
 name: studentapi
-description: The application chart
+description: theapplicationchart
 
 # A chart can be either an 'application' or a 'library' chart.
 #
