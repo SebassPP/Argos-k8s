@@ -5,8 +5,7 @@ dbname: student
 dbpassword: root
 dbusername: root
 
-httpGet:
-  path: /student/health
+healthpath: /student/health
 
 resources:
   requests:

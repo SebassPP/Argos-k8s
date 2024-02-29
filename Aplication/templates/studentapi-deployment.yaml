@@ -31,7 +31,7 @@ spec:
           value: {{.Values.dbusername }}
         startupProbe:
           httpGet:
-            path: {{.Values.httpGet.path }}
+            path: {{.Values.healthpath}}
             port: 8080
           failureThreshold: 30
           periodSeconds: 50
