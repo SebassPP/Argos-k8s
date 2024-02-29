@@ -5,13 +5,11 @@ dbname: student
 dbpassword: root
 dbusername: root
 
-requests:
-  cpu: "100m"
-  memory: "100Mi"
+requestscpu: "100m"
+requestsmemory: "100Mi"
 
-limits:
-  cpu: "200m"
-  memory: "200Mi"
+limitscpu: "200m"
+limitsmemory: "200Mi"
 
   
 autoscaling:

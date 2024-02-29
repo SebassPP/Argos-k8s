@@ -46,8 +46,8 @@ spec:
           failureThreshold: 5
         resources: 
           requests:
-            cpu: {{.Values.requests.cpu}}
-            memory: {{.Values.requests.memory}}
+            cpu: {{.Values.requestscpu}}
+            memory: {{.Values.requestsmemory}}
           limits:
-            cpu: {{.Values.limits.cpu}}
-            memory: {{.Values.limits.memory}}
+            cpu: {{.Values.limitscpu}}
+            memory: {{.Values.limitsmemory}}
